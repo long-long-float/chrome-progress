@@ -1,7 +1,7 @@
 $ ->
-  chrome.storage.local.get 'github_username', (items) ->
-    $('#github-username').val(items.github_username)
+  chrome.storage.local.get 'style_of_pace', (items) ->
+    $('#style-of-pace').val(items.style_of_pace)
 
   $('#save-btn').click ->
-    chrome.storage.local.set github_username: $('#github-username').val(), ->
+    chrome.storage.local.set style_of_pace: $('#style-of-pace').val(), ->
       alert 'saved'

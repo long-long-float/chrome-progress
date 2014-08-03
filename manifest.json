@@ -7,8 +7,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*"],
-      "js": ["js/lib/pace.min.js"],
-      "css": ["css/lib/pace.css"]
+      "js": ["js/lib/pace.min.js"]
     }
   ],
   "background": {
@@ -16,6 +15,7 @@
   },
   "permissions": [
     "http://*/*", "https://*/*",
-    "tabs"
+    "tabs",
+    "storage"
   ]
 }
